@@ -1,7 +1,7 @@
 // Problem Definition:
 // Imagine a system collecting customer ratings for a small business.
-// Customers provide ratings between 1 and 5. The owner wants to sort
-// these ratings in ascending order to analyze them more effectively.
+// Customers provide ratings between 1 and 10. The owner wants to sort
+// these ratings in descending order to analyze them more effectively.
 // Use the Bubble Sort algorithm to solve this problem.
 
 // Steps to Solve:
@@ -20,7 +20,7 @@ function bubbleSort(ratings) {
   for (let i = 0; i < n - 1; i++) {
     // Inner loop for comparing adjacent elements
     for (let j = 0; j < n - i - 1; j++) {
-      if (ratings[j] > ratings[j + 1]) {
+      if (ratings[j] < ratings[j + 1]) {
         // Swap elements using destructuring
         [ratings[j], ratings[j + 1]] = [ratings[j + 1], ratings[j]];
       }
@@ -30,7 +30,7 @@ function bubbleSort(ratings) {
 }
 
 // Input: List of customer ratings
-let customerRatings = [4, 2, 5, 3, 1, 3, 4.5, 4.1, 1.3, 3.8];
+let customerRatings = [4, 5, 3, 1, 3, 9, 7];
 
 // Sort the ratings using Bubble Sort
 let sortedRatings = bubbleSort(customerRatings);
