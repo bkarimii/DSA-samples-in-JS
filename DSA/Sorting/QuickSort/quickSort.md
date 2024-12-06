@@ -1,4 +1,5 @@
-Quick Sort Explanation
+# Quick Sort Explanation
+
 Quick Sort is a divide-and-conquer algorithm used to sort an array. It works by selecting a "pivot" element from the array and partitioning the other elements into two groups:
 
 Elements smaller than or equal to the pivot (placed on the left).
